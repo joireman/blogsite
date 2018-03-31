@@ -3,7 +3,7 @@
 from __future__ import unicode_literals
 
 AUTHOR = 'Paul W. Joireman'
-SITENAME = 'A Byte of Py (occasionally a la mode)'
+SITENAME = 'BytesofPy (often a la mode)'
 SITEURL = ''
 
 PATH = 'content'
@@ -11,6 +11,19 @@ PATH = 'content'
 TIMEZONE = 'America/New_York'
 
 DEFAULT_LANG = 'en'
+
+PLUGIN_PATHS = ['pelican-plugins']
+
+THEME = 'pelican-themes/pelican-bootstrap3'
+BOOTSTRAP_THEME = 'flatly'
+#THEME = 'pelican-themes/pelican-striped-html5up'
+
+#PLUGIN_PATHS = ['/path/to/git/pelican-plugins']
+JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
+PLUGINS = [
+    'i18n_subsites']
+
+I18N_TEMPLATES_LANG = 'en'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
