@@ -28,12 +28,27 @@ PLUGINS = [
     'liquid_tags.notebook',
     'liquid_tags.include_code',
     'render_math',
-    'pelican-ipynb.markup' ]
+    'pelican-ipynb.markup',
+    'tipue_search' ]
 
 NOTEBOOK_DIR = 'notebooks'
 #EXTRA_HEADER = open('_nb_header.html').read().decode('utf-8')
 
+# for Tique Search Plugin
+DIRECT_TEMPLATES = ('index','tags', 'categories', 'authors', 'archives', 'search')
+
 I18N_TEMPLATES_LANG = 'en'
+
+CUSTOM_CSS = 'static/css/custom.css'
+CUSTOM_JS = 'static/js/custom.js'
+
+STATIC_PATHS = [ 'extra' ]
+
+
+EXTRA_PATH_METADATA = {
+    'extra/custom.css': {'path': 'static/css/custom.css'},
+    'extra/custom.js': {'path': 'static/js/custom.js'}
+}
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None

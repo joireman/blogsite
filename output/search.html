@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-    <title>markdown - BytesofPy (often a la mode)</title>
+    <title>Search - BytesofPy (often a la mode)
+</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -174,8 +175,7 @@ init_mathjax();
 </script>
 
 
-    <meta name="author" content="Paul W. Joireman" />
-    <meta name="keywords" content="markdown" />
+        <meta name="author" content="Paul W. Joireman" />
 
     <!-- Open Graph tags -->
         <meta property="og:site_name" content="BytesofPy (often a la mode)" />
@@ -239,21 +239,7 @@ BytesofPy (often a la mode)            </a>
 <div class="container">
     <div class="row">
         <div class="col-sm-9">
-            <article>
-                <h2><a href="/second-post.html">Second Post</a></h2>
-                <div class="summary"><p>Second in a series of posts</p>
-                    <a class="btn btn-default btn-xs" href="/second-post.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="/first-post.html">First Post</a></h2>
-                <div class="summary"><p>Abstract for first post</p>
-                    <a class="btn btn-default btn-xs" href="/first-post.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-
+<div id="tipue_search_content"></div>
         </div>
         <div class="col-sm-3" id="sidebar">
             <aside>
@@ -356,5 +342,17 @@ jQuery(document).ready(function($) {
 });
 });
 </script>
+    <script type="text/javascript" src="/theme/tipuesearch/tipuesearch_set.js"></script>
+    <script type="text/javascript" src="/theme/tipuesearch/tipuesearch.min.js"></script>
+    <script>
+    $(document).ready(function() {
+      $('#tipue_search_input').tipuesearch({
+        'mode' : 'json',
+        'show': 10,
+        'newWindow': false,
+        'contentLocation': 'tipuesearch_content.json'
+      });
+    });
+    </script>
 </body>
 </html>
