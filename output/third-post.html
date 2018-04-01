@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-    <title>python - BytesofPy (often a la mode)</title>
+    <title>Third Post - Part 3 - BytesofPy (often a la mode)</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -173,16 +173,23 @@ init_mathjax = function() {
 init_mathjax();
 </script>
 
+<link rel="canonical" href="/third-post.html">
 
-    <meta name="author" content="Paul W. Joireman" />
-    <meta name="keywords" content="python" />
+        <meta name="author" content="Paul W. Joireman" />
+        <meta name="keywords" content="python,pelican,blog" />
+        <meta name="description" content="This is the third post of a series of posts. It will show series an jupyter notebook." />
 
-    <!-- Open Graph tags -->
         <meta property="og:site_name" content="BytesofPy (often a la mode)" />
-        <meta property="og:type" content="website"/>
-        <meta property="og:title" content="BytesofPy (often a la mode)"/>
-        <meta property="og:url" content=""/>
-        <meta property="og:description" content="BytesofPy (often a la mode)"/>
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="Third Post - Part 3"/>
+        <meta property="og:url" content="/third-post.html"/>
+        <meta property="og:description" content="This is the third post of a series of posts. It will show series an jupyter notebook."/>
+        <meta property="article:published_time" content="2018-03-31" />
+            <meta property="article:section" content="example posts" />
+            <meta property="article:tag" content="python" />
+            <meta property="article:tag" content="pelican" />
+            <meta property="article:tag" content="blog" />
+            <meta property="article:author" content="Paul W. Joireman" />
 
 
 
@@ -214,7 +221,7 @@ BytesofPy (often a la mode)            </a>
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
-                        <li >
+                        <li class="active">
                             <a href="/category/example-posts.html">Example posts</a>
                         </li>
                         <li >
@@ -232,27 +239,110 @@ BytesofPy (often a la mode)            </a>
 <div class="container">
     <div class="row">
         <div class="col-sm-9">
-            <article>
-                <h2><a href="/third-post.html">Third Post - Part 3</a></h2>
-                <div class="summary"><p>This is the third post of a series of posts. It will show series an jupyter notebook.</p>
-                    <a class="btn btn-default btn-xs" href="/third-post.html">more ...</a>
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="/third-post.html"
+                       rel="bookmark"
+                       title="Permalink to Third Post - Part 3">
+                        Third Post - Part 3
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
+                    <div class="panel-body">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2018-03-31T08:40:00-04:00"> Sat 31 March 2018</time>
+    </span>
+
+
+
+
+
+<span class="label label-default">Tags</span>
+	<a href="/tag/python.html">python</a>
+        /
+	<a href="/tag/pelican.html">pelican</a>
+        /
+	<a href="/tag/blog.html">blog</a>
+    
+</footer><!-- /.post-info -->                    </div>
                 </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="/second-post.html">Second Post</a></h2>
-                <div class="summary"><p>Second in a series of posts</p>
-                    <a class="btn btn-default btn-xs" href="/second-post.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="/first-post.html">First Post</a></h2>
-                <div class="summary"><p>Abstract for first post</p>
-                    <a class="btn btn-default btn-xs" href="/first-post.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
+                <p>This post contains a jupyter notebook.</p>
+<p>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Trial-Notebook">Trial Notebook<a class="anchor-link" href="#Trial-Notebook">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">b</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span><span class="o">**</span><span class="mi">3</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">a</span><span class="p">]</span>
+<span class="n">b</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[3]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[1, 8, 27, 64]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+ 
+
+</p>
+            </div>
+            <!-- /.entry-content -->
+<section class="well" id="related-posts">
+    <h4>Part 2 of the example-post-series series</h4>
+       <h5>Previous articles</h5>
+       <ul>
+           <li><a href="/second-post.html">Second Post</a></li>
+       </ul>
+</section>
+        </article>
+    </section>
 
         </div>
         <div class="col-sm-3" id="sidebar">
