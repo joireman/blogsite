@@ -5,18 +5,25 @@ from __future__ import unicode_literals
 AUTHOR = 'Paul W. Joireman'
 SITENAME = 'BytesofPy (often a la mode)'
 SITEURL = ''
-
-PATH = 'content'
-
 TIMEZONE = 'America/New_York'
-
 DEFAULT_LANG = 'en'
 
-PLUGIN_PATHS = ['pelican-plugins']
+# Paths
+PATH = 'content'
+PAGE_PATHS = ['pages']
+ARTICLE_PATHS = ['posts']
 
+# Top menus
+DISPLAY_CATEGORIES_ON_MENU = False
+DISPLAY_PAGES_ON_MENU = True
+
+# Theme configuration
 THEME = 'pelican-themes/pelican-bootstrap3'
 BOOTSTRAP_THEME = 'flatly'
 #THEME = 'pelican-themes/pelican-striped-html5up'
+
+# Plugin Configuration
+PLUGIN_PATHS = ['pelican-plugins']
 
 #PLUGIN_PATHS = ['/path/to/git/pelican-plugins']
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
